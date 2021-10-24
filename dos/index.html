@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title> Deja tus datos... </title>
+	<meta charset = "utf-8"/>
+	<link type="text/css" rel="stylesheet" href="personalidad.css"/>
+	
+</head>
+
+<body>
+	
+	<section id="estructura">
+		<div id="cuadro">
+			
+			<div id="formulario">
+				
+				<form action="funcion.php" method="post">
+				
+				<p id="datos">Deja tus datos y te contactaremos a la brevedad..!</p>
+				
+				<label for = "nombre">Nombre y Apellido:
+				<input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" required ="" />
+				</label>
+				
+				<label for = "telefono">Telefono:
+				<input id="telefono" type="tel" name="telefono" placeholder="(Codigo) Numero" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Por favor coloca el código de área sin cero y el número" required ="" />
+				</label>
+				
+				<label for = "celular">Telefono móvil:
+				<input id="celular" type="tel" name="celular" placeholder="(Codigo) Numero" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Por favor coloca el código de área sin cero y el número sin el 15" required ="" />
+				</label>
+				
+				<label for = "email">E - mail:
+				<input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required=""/>
+				</label>
+				
+				<p>Dirección:
+				<label for = "calle">Calle:
+				<input id="calle" type="text" name="calle" placeholder="Nombre de la calle" required ="" />
+				</label>
+				
+				<label for = "altura">Altura:
+				<input id="altura" type="tel" name="altura" placeholder="Calle/altura" pattern="[0-9]{5}" title="Por favor coloca una altura válida. Consta de 5 dígitos, por favor completa con 0 (ceros) adelante" required ="" />
+				</label>
+				
+				<label for = "barrio">Barrio:
+				<input id="barrio" type="text" name="barrio" placeholder="Barrio/Partido/Municipio" required ="" />
+				</label>
+				
+				<label for = "localidad">Localidad:
+				<input id="localidad" type="text" name="localidad" placeholder="Localidad/Departamento" required ="" />
+				</label>
+				
+				<label for = "cp">Código Postal:
+				<input id="cp" type="tel" name="cp" placeholder="Código Postal" pattern="[0-9]{5}" title="Coloca un Código válido. Consta de 5 dígitos, por favor completa con 0 (ceros) adelante" required ="" />
+				</label>
+				
+				<label for = "provincia">Provincia:
+				<input id="provincia" type="text" name="provincia" placeholder="Provincia" required ="" />
+				</label>
+				
+				</p>
+									
+				<label for="observaciones">Observaciones:</label>
+				<textarea id = "observaciones" name = "observaciones" placeholder = "Comentarios" required=""> Tu mensaje...</textarea>
+					
+				<input id="submit" type="submit" name="submit" value="Enviar" />
+				
+				</form>
+			
+			</div>
+			
+		</div>
+	</section>
+
+</body>
+
+</html>
